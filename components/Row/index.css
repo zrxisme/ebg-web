@@ -1,0 +1,25 @@
+body{
+    background: #eeeeee;
+  }
+  .container_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .container_wrapper > * {
+    flex: auto;
+    min-width: 230px;
+  }
+
+  
+  @media screen and (max-width: 930px) and (min-width: 470px) {
+    .container_wrapper > * {
+      flex: 0 0 50%;
+    }
+  }
+  
+  

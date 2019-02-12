@@ -1,0 +1,65 @@
+.Input_container {
+  position: relative;
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid #eee;
+  background: white;
+  border-radius: 4px;
+}
+
+.Icon_Input {
+  position: relative;
+  flex: 0 0 30px;
+  line-height: 32px;
+  padding-left: 6px;
+}
+.Input {
+  position: relative;
+  border: none;
+  padding: 4px 8px;
+  flex: auto;
+  outline: none;
+  background: none;
+  border-radius: 4px;
+  z-index: 2;
+}
+.Input_container .InputText {
+  height: 26px;
+}
+.Input_style {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  z-index: 1;
+  background: none;
+}
+
+.Input:hover + .Input_style {
+  box-shadow: 0 0 3px #409eff;
+}
+.Input:focus + .Input_style {
+  box-shadow: 0 0 3px #409eff;
+}
+
+.have_prefixed {
+  padding-left: 6px;
+}
+.InputArea {
+  height: 100px;
+}
+.hide {
+  bottom: -12px;
+}
+.Message {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  transition: bottom 0.3s ease;
+}
